@@ -17,7 +17,7 @@ public class GerarGrafico {
 	public CategoryDataset createDataSet(ArrayList<NiveisDeDioxidoDeCarbono> listDados) {
 		
 		DefaultCategoryDataset dataSet = new DefaultCategoryDataset();
-		
+ 		
 		for(NiveisDeDioxidoDeCarbono dioxidoCarbonoInfo : listDados) {
 			dataSet.addValue(dioxidoCarbonoInfo.getAno(), dioxidoCarbonoInfo.getCidade(), "");
 		}
@@ -33,9 +33,9 @@ public class GerarGrafico {
 				dataset,
  				PlotOrientation.VERTICAL, 
 				true, 
-				false, 
+				false,
 				false);
-		
+				
 		return graficoInformacao;
 
 	}
