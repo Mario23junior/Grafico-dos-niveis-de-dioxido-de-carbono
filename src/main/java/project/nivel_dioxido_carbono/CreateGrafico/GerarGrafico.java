@@ -33,7 +33,7 @@ public class GerarGrafico {
 				dataset,
  				PlotOrientation.VERTICAL, 
 				true, 
-				false,
+				false, 
 				false);
 		
 		return graficoInformacao;
