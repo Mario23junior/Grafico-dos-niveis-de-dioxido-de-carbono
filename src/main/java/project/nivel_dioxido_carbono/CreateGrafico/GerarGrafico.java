@@ -2,7 +2,9 @@ package project.nivel_dioxido_carbono.CreateGrafico;
 
 import java.util.ArrayList;
 
+import org.jfree.chart.ChartFactory;
 import org.jfree.chart.JFreeChart;
+import org.jfree.chart.plot.PlotOrientation;
 import org.jfree.data.category.CategoryDataset;
 import org.jfree.data.category.DefaultCategoryDataset;
 
@@ -22,7 +24,17 @@ public class GerarGrafico {
 	
 	
 	public JFreeChart createBaChart(CategoryDataset dataset) {
-		return null;
+		JFreeChart graficoInformacao = ChartFactory.createBarChart(
+				"Niveis de dioxido de carbono",
+				"",
+				"Aumento",
+				dataset,
+ 				PlotOrientation.VERTICAL, 
+				true, 
+				false,
+				false);
+		
+		return graficoInformacao;
 
 	}
 	
