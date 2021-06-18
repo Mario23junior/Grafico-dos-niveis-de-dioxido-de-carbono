@@ -48,9 +48,9 @@ public class JanelaGrafico extends JFrame {
 		ArrayList<NiveisDeDioxidoDeCarbono> listDados = new ArrayList<NiveisDeDioxidoDeCarbono>();
 		
 		listDados.add(new NiveisDeDioxidoDeCarbono("São paulo", 2009L, 232));
-		listDados.add(new NiveisDeDioxidoDeCarbono("São Minas gerais", 2009L, 122));
-		listDados.add(new NiveisDeDioxidoDeCarbono("Rio de Janeiro", 2009L, 212));
-
+		listDados.add(new NiveisDeDioxidoDeCarbono("Minas gerais", 2009L, 123.2));
+		listDados.add(new NiveisDeDioxidoDeCarbono("Rio de Janeiro", 2009L, 212.32));
+		listDados.add(new NiveisDeDioxidoDeCarbono("Mato groso do sul", 2009L, 723.23));
 		
 		GerarGrafico create = new GerarGrafico();
 		
